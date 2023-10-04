@@ -26,7 +26,6 @@
 
     # lua
     lua
-    luajit
     stylua
     lua-language-server
 
