@@ -3,6 +3,5 @@
     ./shell.nix
     ./tools.nix
     ./packages.nix
-    ./neovim
   ];
 }
