@@ -8,11 +8,13 @@
     ranger
     yt-dlp
     fastfetch
+    ripgrep
 
     # go
     go
     delve
     go-tools
+    gopls
     golangci-lint
 
     # nix
@@ -22,9 +24,17 @@
     nurl
     nix-init
 
+    # lua
+    lua
+    luajit
+    stylua
+    lua-language-server
+
     # other lsp
     vscode-langservers-extracted
     yaml-language-server
     taplo
+    marksman
+    nodePackages.bash-language-server
   ];
 }
