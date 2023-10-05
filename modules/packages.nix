@@ -29,6 +29,10 @@
     stylua
     lua-language-server
 
+    # rust
+    rust-bin.stable.latest.default
+    rust-analyzer
+
     # other lsp
     vscode-langservers-extracted
     yaml-language-server
