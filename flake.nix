@@ -9,18 +9,23 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     rust-overlay.url = "github:oxalica/rust-overlay";
+    nixgl.url = "github:guibou/nixGL";
   };
 
   outputs = {
     nixpkgs,
     home-manager,
     rust-overlay,
+    nixgl,
     ...
   }: let
     system = "x86_64-linux";
     pkgs = import nixpkgs {
       inherit system;
-      overlays = [rust-overlay.overlays.default];
+      overlays = [
+        rust-overlay.overlays.default
+        nixgl.overlay
+      ];
     };
   in {
     homeConfigurations."twkstar" = home-manager.lib.homeManagerConfiguration {

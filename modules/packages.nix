@@ -9,6 +9,7 @@
     yt-dlp
     fastfetch
     ripgrep
+    nixgl.nixGLIntel
 
     # go
     go
